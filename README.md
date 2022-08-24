@@ -8,11 +8,15 @@ Primeiramente, execute o comando [`npm install`] para instalar as dependências 
 npm install
 ```
 
-E depois, execute o comando [`npm start`] para visualizar o projeto na web, ou o comando [`npm run electron`] para visualizar a versão desktop.
+E depois, execute o comando [`npm start`], abra outro terminal e execute o comando [`npm run electron`] para visualizar a versão desktop.
 
 ```bash
+# terminal 1
 npm start
-# ou
+```
+
+```bash
+# terminal 2
 npm run electron
 ```
 
