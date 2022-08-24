@@ -1,0 +1,81 @@
+{
+  "name": "comissao-sistema_xxpay",
+  "version": "0.1.0",
+  "private": true,
+  "main": "public/electron.js",
+  "homepage": "./",
+  "author": {
+    "name": "Lucas Gomide",
+    "email": "lucasgomidecv@gmail.com"
+  },
+  "description": "Sistema para controle de comissões",
+  "dependencies": {
+    "@date-io/date-fns": "^2.15.0",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/lab": "^5.0.0-alpha.95",
+    "@mui/material": "^5.10.0",
+    "@mui/styled-engine-sc": "^5.10.0",
+    "@mui/x-data-grid": "^5.15.2",
+    "@mui/x-date-pickers": "^5.0.0-beta.5",
+    "@react-google-maps/api": "^2.7.0",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.26.1",
+    "date-fns": "^2.29.1",
+    "electron-is-dev": "^2.0.0",
+    "firebase": "^8.10.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-geocode": "^0.2.3",
+    "react-google-charts": "^4.0.0",
+    "react-input-mask": "^2.0.4",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.0",
+    "styled-components": "^5.3.5",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "electron": "^20.0.1",
+    "electron-builder": "^23.3.3"
+  },
+  "scripts": {
+    "electron": "electron .",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron:package:win": "yarn build && electron-builder -w -c.extraMetadata.main=build/electron.js"
+  },
+  "build": {
+    "appId": "com.example.electron",
+    "productName": "Controle de comissão",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "public"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
